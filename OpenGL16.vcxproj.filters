@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="GLFW">
+      <UniqueIdentifier>{1e025602-04a3-4555-9253-bcf86f3dada1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{a028756a-42bb-4276-bb3e-f01274377c53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{6a1e3e55-2ddb-446c-8ce1-381fd1e5ea64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Texture">
+      <UniqueIdentifier>{3abee6c9-fee8-44cf-bd09-f9a386ccbbbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VAO">
+      <UniqueIdentifier>{efc51b33-9768-42b6-b367-19283ae376f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{2191b39f-3564-4f4f-bf6c-f6819045605f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VBO">
+      <UniqueIdentifier>{e55a76ba-3b86-4e83-9acc-13c8410aba73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MAIN">
+      <UniqueIdentifier>{b1401914-39e2-4f49-bf49-856c3cb74345}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EBO">
+      <UniqueIdentifier>{9352c97b-bf08-46df-8359-f34e1c53a3c8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="EBO.cpp">
+      <Filter>EBO</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>MAIN</Filter>
+    </ClCompile>
+    <ClCompile Include="Windowing.cpp">
+      <Filter>GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="VAO.cpp">
+      <Filter>VAO</Filter>
+    </ClCompile>
+    <ClCompile Include="VBO.cpp">
+      <Filter>VBO</Filter>
+    </ClCompile>
+    <ClCompile Include="stb_image.cpp">
+      <Filter>Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="CallBack.cpp">
+      <Filter>GLFW</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="EBO.h">
+      <Filter>EBO</Filter>
+    </ClInclude>
+    <ClInclude Include="CallBack.h">
+      <Filter>GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="Windowing.h">
+      <Filter>GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="VAO.h">
+      <Filter>VAO</Filter>
+    </ClInclude>
+    <ClInclude Include="VBO.h">
+      <Filter>VBO</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>Texture</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="brick.png">
+      <Filter>Resource</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="default.frag">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="default.vert">
+      <Filter>Resource</Filter>
+    </None>
+  </ItemGroup>
+</Project>
