@@ -1,6 +1,6 @@
 #pragma once
 
-#include <glad/glad.h>
+#include <glad/gl.h>
 //#include <glad/glad.c>
 #include <GLFW/glfw3.h>
 
@@ -11,8 +11,6 @@
 #include<glm/gtx/vector_angle.hpp>
 
 #include "Shader.h"
-
-
 
 class Camera
 {

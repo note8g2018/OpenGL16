@@ -60,6 +60,9 @@
     <ClCompile Include="CallBack.cpp">
       <Filter>GLFW</Filter>
     </ClCompile>
+    <ClCompile Include="gl.c">
+      <Filter>MAIN</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h">

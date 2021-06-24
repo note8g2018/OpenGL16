@@ -23,8 +23,8 @@ GLFWwindow* Windowing::run()
         cout << "Failed to Init GLFW" << endl;
         exit(EXIT_FAILURE);
     }
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 5);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     // glfw window creation
     // --------------------
@@ -39,10 +39,14 @@ GLFWwindow* Windowing::run()
     glfwMakeContextCurrent(window);
     // glad: load all OpenGL function pointers
     // ---------------------------------------
-    if(!gladLoadGLLoader((GLADloadproc) glfwGetProcAddress))
+    if(!gladLoadGL(glfwGetProcAddress))
     {
         cout << "Failed to initialize GLAD" << endl;
     }
+    /*if(!gladLoadGLLoader((GLADloadproc) glfwGetProcAddress))
+    {
+        cout << "Failed to initialize GLAD" << endl;
+    }*/
     cout << "OpenGL Version: " << glGetString(GL_VERSION) << endl;
     set_callBack_functions();
 
@@ -54,8 +58,7 @@ void Windowing::set_callBack_functions()
     glfwSetFramebufferSizeCallback(window,
         framebuffer_size_callback);
     glfwSetInputMode(window, GLFW_STICKY_KEYS, GLFW_TRUE);
-    glfwSetKeyCallback(window, key_callback);
-    
+    glfwSetKeyCallback(window, key_callback);    
 }
 
 void Windowing::processInput()

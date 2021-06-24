@@ -1,9 +1,8 @@
-#pragma once
 
 #include <iostream>
 
-#include <glad/glad.h>
-#include <glad/glad.c>
+#include <glad/gl.h>
+//#include <glad/glad.c>
 #include <GLFW/glfw3.h>
 
 #include "Windowing.h"
@@ -79,6 +78,8 @@ int main()
     // timing
     float deltaTime = 0.0f;	// time between current frame and last frame
     float lastFrame = 0.0f;
+
+    glfwSwapInterval(1);
 
     // render loop
     // -----------

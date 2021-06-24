@@ -24,10 +24,20 @@ void Camera::Matrix(float FOVdeg, float nearPlane, float farPlane, Shader& shade
 	glUniformMatrix4fv(glGetUniformLocation(shader.ID, uniform), 1, GL_FALSE, glm::value_ptr(projection * view));
 }
 
-
-
 void Camera::Inputs(GLFWwindow* window, float deltaTime)
 {
+	//// To increase the speed of Movement of the Camera
+	//if(glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS)
+	//{
+	//	//shift_press = true;
+	//	speed_factor = 50.0f;
+	//}
+	//// To return the speed of Movement of the Camera to Normal
+	//else if(glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_RELEASE)
+	//{
+	//	//shift_press = false;
+	//	speed_factor = 1.0f;
+	//}
 	float speed = deltaTime * speed_initial * speed_factor;
 	// Handles key inputs
 	// Camera go Forward
@@ -60,18 +70,7 @@ void Camera::Inputs(GLFWwindow* window, float deltaTime)
 	{
 		Position += speed * -Up;
 	}
-	// To increase the speed of Movement of the Camera
-	if(glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS)
-	{
-		//shift_press = true;
-		//speed_factor = 50.0f;
-	}
-	// To return the speed of Movement of the Camera to Normal
-	else if(glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_RELEASE)
-	{
-		//shift_press = false;
-		//speed_factor = 1.0f;
-	}
+	
 
 
 

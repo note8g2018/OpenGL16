@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-#include <glad/glad.h>
+#include <glad/gl.h>
 //#include <glad/glad.c>
 #include <GLFW/glfw3.h>
 
